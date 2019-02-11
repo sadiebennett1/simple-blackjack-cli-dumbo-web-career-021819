@@ -1,4 +1,4 @@
-require 'pry'
+
 def welcome
   # code #welcome here
   puts "Welcome to the Blackjack Table"
@@ -65,7 +65,6 @@ def runner
   welcome
   total = initial_round
   until total > 21
-    binding.pry
     total = hit?(total)
     display_card_total(total)
   end
